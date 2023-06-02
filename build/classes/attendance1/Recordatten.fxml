@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="pane2" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="770.0" prefWidth="1254.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="attendance1.RecordCtrl">
+   <children>
+      <Text fill="#1a437c" layoutX="506.0" layoutY="61.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Record attendance" wrappingWidth="230.6708984375">
+         <font>
+            <Font name="AdobeArabic-Bold" size="40.0" />
+         </font>
+      </Text>
+      <ComboBox fx:id="course_name" editable="true" layoutX="719.0" layoutY="93.0" prefHeight="41.0" prefWidth="203.0" promptText="course name" />
+      <Text fill="#0f2b66" layoutX="539.0" layoutY="122.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Course Name">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Text>
+      <Button fx:id="select" layoutX="1005.0" layoutY="98.0" mnemonicParsing="false" onAction="#nav_select" text="select" textFill="#0f2b66" />
+      <TableView layoutX="380.0" layoutY="162.0" prefHeight="571.0" prefWidth="760.0">
+        <columns>
+          <TableColumn prefWidth="112.0" text="First Name" />
+          <TableColumn prefWidth="104.0" text="Second Name" />
+            <TableColumn prefWidth="105.0" text="Third Name" />
+            <TableColumn prefWidth="105.0" text="Forth Name" />
+            <TableColumn prefWidth="114.0" text="ID" />
+            <TableColumn prefWidth="120.0" text="Phone" />
+            <TableColumn prefWidth="97.0" text="Attendance" />
+        </columns>
+      </TableView>
+      <Text fill="#0f2b66" layoutX="54.0" layoutY="142.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Attendance">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+      <Text layoutX="105.0" layoutY="728.0" strokeType="OUTSIDE" strokeWidth="0.0" />
+      <Text layoutX="133.0" layoutY="711.0" strokeType="OUTSIDE" strokeWidth="0.0" />
+      <Text fill="#262080" layoutX="42.0" layoutY="352.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Students" wrappingWidth="126.78515625">
+         <font>
+            <Font name="AdobeArabic-Regular" size="35.0" />
+         </font>
+      </Text>
+      <Button fx:id="insert1" layoutX="31.0" layoutY="476.0" mnemonicParsing="false" onAction="#nav_insertStud" prefHeight="31.0" prefWidth="127.0" text="Insert Students" textFill="#1200bb" />
+      <Button fx:id="edit1" layoutX="32.0" layoutY="386.0" mnemonicParsing="false" onAction="#nav_editStud" prefHeight="29.0" prefWidth="181.0" text="Edit Or Delete Students" textFill="#1200bb" />
+      <Text fill="#262080" layoutX="40.0" layoutY="543.0" strokeType="OUTSIDE" strokeWidth="0.0" text="lectures " wrappingWidth="126.78515625">
+         <font>
+            <Font name="AdobeArabic-Regular" size="35.0" />
+         </font>
+      </Text>
+      <Button fx:id="insert_ins" layoutX="31.0" layoutY="624.0" mnemonicParsing="false" onAction="#nav_insertLectures" prefHeight="29.0" prefWidth="145.0" text="Insert lectures " textFill="#1200bb" />
+      <Button fx:id="edit_ins" layoutX="32.0" layoutY="577.0" mnemonicParsing="false" onAction="#nav_editLectures" prefHeight="31.0" prefWidth="181.0" text="Edit Or Delete lectures " textFill="#1200bb" />
+      <Button fx:id="attendance" layoutX="31.0" layoutY="432.0" mnemonicParsing="false" onAction="#nav_attendance" prefHeight="29.0" prefWidth="145.0" text="Record attendance" textFill="#1200bb" />
+      <Line endX="15.0" endY="-112.0" layoutX="218.0" layoutY="397.0" startX="15.0" startY="343.0" />
+      <Line endX="100.0" layoutX="133.0" layoutY="741.0" startX="-100.0" />
+      <Line endX="100.0" layoutX="133.0" layoutY="290.0" startX="-100.0" />
+      <ComboBox fx:id="Attendance" editable="true" layoutX="198.0" layoutY="119.0" prefWidth="150.0" promptText="Attendance" />
+      <Button layoutX="31.0" layoutY="674.0" mnemonicParsing="false" onAction="#nav_logout" prefHeight="27.0" prefWidth="145.0" text="LogOut" textFill="#1200bb" />
+   </children>
+</AnchorPane>

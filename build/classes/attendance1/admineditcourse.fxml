@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="pane1" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="464.0" prefWidth="819.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="attendance1.EditCourses">
+   <children>
+      <ComboBox fx:id="course_name" editable="true" layoutX="456.0" layoutY="107.0" prefHeight="41.0" prefWidth="203.0" promptText="course name" />
+      <Text fill="#0f5c66" layoutX="295.0" layoutY="136.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Course Name">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Text>
+      <Text fill="#0f5c66" layoutX="361.0" layoutY="195.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Book">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+      <Text fill="#0f5c66" layoutX="316.0" layoutY="253.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Room Name">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+      <Text fill="#0f5c66" layoutX="318.0" layoutY="316.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Instructor">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+      <Text layoutX="95.0" layoutY="466.0" strokeType="OUTSIDE" strokeWidth="0.0" />
+      <Button fx:id="select" layoutX="705.0" layoutY="112.0" mnemonicParsing="false" onAction="#nav_select" text="select" textFill="#0f5c66" />
+      <TextField fx:id="book" layoutX="456.0" layoutY="172.0" promptText="book" />
+      <TextField fx:id="room" layoutX="464.0" layoutY="230.0" promptText="room name" />
+      <Button fx:id="delete" layoutX="485.0" layoutY="388.0" mnemonicParsing="false" onAction="#nav_delete" text=" Delete" textFill="#0f5c66" />
+      <Button fx:id="edit" layoutX="592.0" layoutY="388.0" mnemonicParsing="false" onAction="#nav_edit" prefHeight="31.0" prefWidth="67.0" text="Edit" textFill="#0f5c66" />
+      <Text fill="#136bb0" layoutX="316.0" layoutY="60.0" strokeType="OUTSIDE" strokeWidth="0.0" text=" Edit a course Page" wrappingWidth="269.51953125">
+         <font>
+            <Font name="AdobeArabic-Regular" size="40.0" />
+         </font>
+      </Text>
+      <Text fill="#262080" layoutX="50.0" layoutY="81.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Courses" wrappingWidth="126.78515625">
+         <font>
+            <Font name="AdobeArabic-Regular" size="35.0" />
+         </font>
+      </Text>
+      <Button fx:id="insert_c" layoutX="17.0" layoutY="156.0" mnemonicParsing="false" onAction="#nav_insert" prefHeight="31.0" prefWidth="151.0" text="Insert Course" textFill="#1200bb" />
+      <Button fx:id="edit_c" layoutX="15.0" layoutY="117.0" mnemonicParsing="false" onAction="#nav_editCourse" prefHeight="31.0" prefWidth="170.0" text="Edit Or Delete Course" textFill="#1200bb" />
+      <Text fill="#262080" layoutX="29.0" layoutY="228.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Instructor" wrappingWidth="126.78515625">
+         <font>
+            <Font name="AdobeArabic-Regular" size="35.0" />
+         </font>
+      </Text>
+      <Button fx:id="insert_ins" layoutX="10.0" layoutY="293.0" mnemonicParsing="false" onAction="#nav_inserIns" prefHeight="31.0" prefWidth="170.0" text="Insert Instructor" textFill="#1200bb" />
+      <Button fx:id="edit_ins" layoutX="9.0" layoutY="245.0" mnemonicParsing="false" onAction="#nav_editins" prefHeight="29.0" prefWidth="181.0" text="Edit Or Delete Instructor" textFill="#1200bb" />
+      <Line endX="15.0" endY="-99.7646484375" layoutX="201.0" layoutY="128.0" startX="15.0" startY="330.2353515625" />
+      <ComboBox fx:id="ins_name" editable="true" layoutX="465.0" layoutY="293.0" prefHeight="31.0" prefWidth="170.0" promptText="instructor" />
+      <Label fx:id="l" layoutX="409.0" layoutY="346.0" text="Status" textFill="#f50000">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Button layoutX="28.0" layoutY="346.0" mnemonicParsing="false" onAction="#nav_logout" prefHeight="27.0" prefWidth="145.0" text="LogOut" textFill="#1200bb" />
+   </children>
+</AnchorPane>
