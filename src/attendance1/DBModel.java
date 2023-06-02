@@ -88,6 +88,7 @@ public class DBModel {
         return courseNames;
 
     }
+    //this is test comment
     public ArrayList<String> getInstructorNames() {
         ArrayList<String> instructorNames = new ArrayList<>();
 
